@@ -1,14 +1,14 @@
 export default function TitleCard({ imageURL, name, genres, rating }) {
   return (
-    <article className='w-64 rounded-lg bg-gray-50'>
-      <img src={imageURL} alt='Movie Poster' />
-      <div>
-        <h2 className='text-gray-800'>{name}</h2>
+    <article className='w-64 text-xs text-gray-800 rounded-lg bg-gray-50'>
+      <img src={imageURL} alt={`${name} Poster`} />
+      <div className='flex flex-col p-3 space-y-0.5'>
+        <h2 className='text-xl font-bold '>{name}</h2>
         <span>{genres}</span>
-        <div className='flex items-center'>
+        <div className='flex items-center space-x-1.5 pt-1'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
-            className='w-5 h-5 text-yellow-400'
+            className='w-4 h-4 text-yellow-400'
             viewBox='0 0 20 20'
             fill='currentColor'
           >
