@@ -1,6 +1,10 @@
-export default function TitleCard({ imageURL, name, genres, rating }) {
+import PropTypes from 'prop-types';
+
+export default function TitleCard({
+  title: { imageURL, name, genres, rating, overview },
+}) {
   return (
-    <article className='w-64 text-xs text-gray-800 rounded-lg bg-gray-50'>
+    <article className='w-64 text-xs text-gray-800 rounded-lg bg-gray-50 group'>
       <img src={imageURL} alt={`${name} Poster`} />
       <div className='flex flex-col p-3 space-y-0.5'>
         <h2 className='text-xl font-bold '>{name}</h2>
@@ -20,3 +24,13 @@ export default function TitleCard({ imageURL, name, genres, rating }) {
     </article>
   );
 }
+
+TitleCard.propTypes = {
+  title: PropTypes.shape({
+    imageURL: PropTypes.string,
+    name: PropTypes.string.isRequired,
+    genres: PropTypes.string,
+    rating: PropTypes.string.isRequired,
+    overview: PropTypes.string,
+  }),
+};
