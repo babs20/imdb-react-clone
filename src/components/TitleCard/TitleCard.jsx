@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 export default function TitleCard({
-  title: { imageURL, name, genres, rating, overview },
+  title: { imageURL, name, genres, rating },
 }) {
   return (
     <article className='w-64 text-xs text-gray-800 rounded-lg bg-gray-50 group'>
@@ -31,6 +31,5 @@ TitleCard.propTypes = {
     name: PropTypes.string.isRequired,
     genres: PropTypes.string,
     rating: PropTypes.string.isRequired,
-    overview: PropTypes.string,
   }),
 };
