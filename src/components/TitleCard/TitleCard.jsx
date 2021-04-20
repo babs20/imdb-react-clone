@@ -4,11 +4,10 @@ export default function TitleCard({
   title: { imageURL, name, genres, rating },
 }) {
   return (
-    <article className='w-64 text-xs text-gray-800 rounded-lg bg-gray-50 group'>
+    <article className='w-64 space-y-1 text-xs text-gray-50'>
       <img src={imageURL} alt={`${name} Poster`} />
-      <div className='flex flex-col p-3 space-y-0.5'>
+      <div className='flex flex-col'>
         <h2 className='text-xl font-bold '>{name}</h2>
-        <span>{genres}</span>
         <div className='flex items-center space-x-1.5 pt-1'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
