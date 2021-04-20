@@ -11,10 +11,7 @@ export default {
   decorators: [
     story => (
       <nav className='flex items-center w-full h-16 p-4 bg-gray-800'>
-        <Router history={history}>
-          {story()}
-          {story()}
-        </Router>
+        <Router history={history}>{story()}</Router>
       </nav>
     ),
   ],
