@@ -1,5 +1,5 @@
 import TitleCard from './TitleCard';
-import '../../styles/index.css';
+import '../styles/index.css';
 
 export default {
   component: TitleCard,
