@@ -7,7 +7,12 @@ export default function TitleCardList({ titles }) {
     return <TitleCard {...title} key={index} />;
   });
 
-  return <section className='flex'>{list}</section>;
+  return (
+    <section className='flex flex-col px-14'>
+      <h2 className='mb-2 text-2xl font-bold text-gray-50'>Trending Movies</h2>
+      <div className='flex space-x-4'>{list}</div>
+    </section>
+  );
 }
 
 TitleCardList.propTypes = {
