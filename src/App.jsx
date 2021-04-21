@@ -1,5 +1,6 @@
+import Home from './pages/Home';
 function App() {
-  return <div className='p-4 bg-gray-800'></div>;
+  return <Home />;
 }
 
 export default App;
