@@ -12,10 +12,17 @@ module.exports = {
       colors: {
         gray: colors.gray,
       },
+      aspectRatio: {
+        17: '17',
+        25: '25',
+      },
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [require('@tailwindcss/forms')],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/aspect-ratio'),
+  ],
 };
