@@ -6,7 +6,11 @@ export default {
   component: TitleCardList,
   title: 'Carousel/TitleCardList',
   decorators: [
-    story => <div className='w-full h-full p-16 bg-gray-800'>{story()}</div>,
+    story => (
+      <div className='flex flex-col w-full h-full bg-gray-800 px-14'>
+        {story()}
+      </div>
+    ),
   ],
 };
 
