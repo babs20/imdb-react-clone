@@ -3,7 +3,7 @@ import '../styles/index.css';
 
 export default {
   component: TitleCard,
-  title: 'TitleCard',
+  title: 'Carousel/TitleCard',
   decorators: [
     story => <div className='w-full h-full p-16 bg-gray-800'>{story()}</div>,
   ],

@@ -3,7 +3,7 @@ import '../styles/index.css';
 
 export default {
   component: CollectionCard,
-  title: 'CollectionCard',
+  title: 'Carousel/CollectionCard',
   decorators: [
     story => (
       <section className='w-full h-full p-16 bg-gray-800'>{story()}</section>

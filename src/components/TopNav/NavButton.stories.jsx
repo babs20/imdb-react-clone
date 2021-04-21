@@ -7,7 +7,7 @@ const history = createBrowserHistory();
 
 export default {
   component: NavButton,
-  title: 'NavButton',
+  title: 'TopNav/NavButton',
   decorators: [
     story => (
       <nav className='flex items-center w-full h-16 p-4 bg-gray-800'>
