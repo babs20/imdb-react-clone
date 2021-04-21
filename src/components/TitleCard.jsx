@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 
-export default function TitleCard({
-  title: { imageURL, name, genres, rating },
-}) {
+export default function TitleCard({ imageURL, name, genres, rating }) {
   return (
     <article className='w-64 space-y-1 text-xs text-gray-50'>
-      <img src={imageURL} alt={`${name} Poster`} />
+      <div className='object-cover aspect-w-17 aspect-h-25'>
+        <img src={imageURL} alt={`${name} Poster`} />
+      </div>
       <div className='flex flex-col'>
         <h2 className='text-xl font-bold '>{name}</h2>
         <div className='flex items-center space-x-1.5 pt-1'>
@@ -25,10 +25,8 @@ export default function TitleCard({
 }
 
 TitleCard.propTypes = {
-  title: PropTypes.shape({
-    imageURL: PropTypes.string,
-    name: PropTypes.string.isRequired,
-    genres: PropTypes.string,
-    rating: PropTypes.string.isRequired,
-  }),
+  imageURL: PropTypes.string,
+  name: PropTypes.string.isRequired,
+  genres: PropTypes.string,
+  rating: PropTypes.string.isRequired,
 };

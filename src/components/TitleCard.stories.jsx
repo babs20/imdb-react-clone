@@ -13,11 +13,9 @@ const Template = args => <TitleCard {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  title: {
-    name: 'Violet Evergarden',
-    imageURL:
-      'https://image.tmdb.org/t/p/original/ImvHbM4GsJJykarnOzhtpG6ax6.jpg',
-    genres: 'Animation • Sci-Fi & Fantasy • Drama',
-    rating: '8.7',
-  },
+  name: 'Violet Evergarden',
+  imageURL:
+    'https://image.tmdb.org/t/p/original/ImvHbM4GsJJykarnOzhtpG6ax6.jpg',
+  genres: 'Animation • Sci-Fi & Fantasy • Drama',
+  rating: '8.7',
 };
