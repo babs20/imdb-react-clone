@@ -1,5 +1,5 @@
 import NavButton from './NavButton';
-import '../styles/index.css';
+import '../../styles/index.css';
 import { Router } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 

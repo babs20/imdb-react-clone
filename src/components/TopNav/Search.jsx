@@ -1,9 +1,9 @@
 export default function Search() {
   return (
-    <form role='search' className='flex items-center'>
+    <form role='search' className='flex items-center pr-4'>
       <input
         type='text'
-        className='pr-12 font-medium rounded-lg'
+        className='h-10 pr-12 font-medium rounded-lg'
         placeholder='Find Your Favorites'
       />
       <svg

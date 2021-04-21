@@ -1,5 +1,5 @@
 import Search from './Search';
-import '../styles/index.css';
+import '../../styles/index.css';
 
 export default {
   component: Search,
