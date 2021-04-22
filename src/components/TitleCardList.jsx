@@ -1,17 +1,51 @@
 import PropTypes from 'prop-types';
 import TitleCard from './TitleCard';
-import AliceCarousel from 'react-alice-carousel';
-import 'react-alice-carousel/lib/alice-carousel.css';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 export default function TitleCardList({ titles }) {
   const list = titles.map((title, index) => {
     return <TitleCard {...title} key={index} />;
   });
 
-  const responsive = {
-    0: { items: 1 },
-    568: { items: 2 },
-    1024: { items: 5 },
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 7,
+    slidesToScroll: 7,
+    centerMode: true,
+    responsive: [
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+    ],
   };
 
   return (
@@ -20,12 +54,7 @@ export default function TitleCardList({ titles }) {
         <h2 className='mb-2 text-2xl font-bold text-gray-50'>
           Trending Movies
         </h2>
-        <AliceCarousel
-          items={list}
-          infinite
-          responsive={responsive}
-          disableDotsControls
-        />
+        <Slider {...settings}>{list}</Slider>
       </div>
     </section>
   );
