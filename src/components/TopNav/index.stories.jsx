@@ -3,7 +3,7 @@ import '../../styles/index.css';
 
 export default {
   component: TopNav,
-  title: 'TopNav/TopNav',
+  title: 'TopNav/Default',
 };
 
 const Template = args => <TopNav {...args} />;
