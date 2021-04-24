@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 html {
-  @apply font-inter;
+  @apply font-sans;
   @apply antialiased;
 }
