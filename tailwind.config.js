@@ -34,6 +34,9 @@ module.exports = {
         17: '17',
         25: '25',
       },
+      zIndex: {
+        '-10': '-10',
+      },
     },
   },
   variants: {
