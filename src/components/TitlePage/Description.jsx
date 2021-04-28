@@ -1,4 +1,3 @@
-import GenrePill from './GenrePill';
 import PropTypes from 'prop-types';
 
 export default function Description({
@@ -51,7 +50,7 @@ export default function Description({
                 </span>
               ))}
             </div>
-            <span className='opacity-75'>{status}</span>
+            <span className='opacity-75'>Series {status}</span>
           </div>
           <p className='pt-1 text-sm whitespace-pre-line'>{overview}</p>
         </div>
