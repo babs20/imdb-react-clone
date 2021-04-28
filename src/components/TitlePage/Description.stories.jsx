@@ -15,6 +15,7 @@ const Template = args => <Description {...args} />;
 export const Violet = Template.bind({});
 Violet.args = {
   ...Home.Default.args.titles[0],
+  status: 'Finished',
   backgroundURL:
     'https://image.tmdb.org/t/p/original/uKtyR5VqjefVgYQ64Hy1ch2BVFo.jpg',
   overview:
@@ -24,6 +25,7 @@ Violet.args = {
 export const Ergo = Template.bind({});
 Ergo.args = {
   ...Home.Default.args.titles[2],
+  status: 'Finished',
   backgroundURL:
     'https://image.tmdb.org/t/p/original/pocqO2L8PW9xh1oA7ZG3iXh62FL.jpg',
   overview:
@@ -33,6 +35,7 @@ Ergo.args = {
 export const Lustrous = Template.bind({});
 Lustrous.args = {
   ...Home.Default.args.titles[5],
+  status: 'Finished',
   backgroundURL:
     'https://image.tmdb.org/t/p/original/bkNvw8aaWYiOoUpx6mwTx6bDvEF.jpg',
   overview:
