@@ -7,20 +7,14 @@ export default function Description({
   backgroundURL,
 }) {
   return (
-    <div className='relative block text-gray-50'>
+    <header className='relative block text-gray-50'>
       <div className='absolute w-full h-96'>
         <img
           src={`${backgroundURL}`}
-          alt=''
+          alt={`${name} Poster`}
           className='absolute object-cover object-center w-full h-full opacity-25'
         />
-        <div
-          style={{
-            'background-image':
-              'linear-gradient(to bottom, transparent, rgb(39, 39, 42) 95%)',
-          }}
-          className='absolute top-0 z-10 w-full h-full'
-        />
+        <div className='absolute top-0 z-10 w-full h-full bg-gradient-to-b from-transparent to-gray-800' />
       </div>
       <div className='flex p-16'>
         <img src={imageURL} alt={`${name} Poster`} className='z-10 w-40' />
@@ -31,8 +25,13 @@ export default function Description({
           </p>
         </div>
       </div>
-    </div>
+    </header>
   );
 }
 
-Description.propTypes = {};
+Description.propTypes = {
+  name: PropTypes.string.isRequired,
+  overview: PropTypes.string.isRequired,
+  imageURL: PropTypes.string.isRequired,
+  backgroundURL: PropTypes.string.isRequired,
+};
