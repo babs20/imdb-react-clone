@@ -6,3 +6,14 @@ html {
   @apply font-sans;
   @apply antialiased;
 }
+
+.navUnderline::after {
+  content: '';
+  bottom: 0px;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background-color: #dc2626;
+  border-radius: 4px;
+}
