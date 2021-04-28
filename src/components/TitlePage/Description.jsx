@@ -52,7 +52,7 @@ export default function Description({
             </div>
             <span className='opacity-75'>Series {status}</span>
           </div>
-          <p className='pt-1 text-sm whitespace-pre-line'>{overview}</p>
+          <p className='pt-1 whitespace-pre-line'>{overview}</p>
         </div>
       </div>
     </header>
